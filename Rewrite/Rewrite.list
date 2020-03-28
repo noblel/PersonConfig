@@ -20,8 +20,8 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.
 ^https://app.bilibili.com/x/v2/rank url script-response-body bilibiliRank.js
 ^https://api.bilibili.com/x/v2/reply/main\?access_key url script-response-body bilibiliReply.js
 ^https://app.bilibili.com/x/v2/show/popular/index\?access_key url script-response-body bilibiliHot.js
-https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best:22333/geturl/
-https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best:22333/season/
+https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best/playurl/
+https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best/season/
 
 # 抖音去广告去水印
 ^https://aweme-eagle(.*)\.snssdk\.com\/aweme/.+/(feed|aweme/post|follow/feed)/ url script-response-body Aweme.js
